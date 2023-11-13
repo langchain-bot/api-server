@@ -9,7 +9,7 @@ def index():
     return jsonify({"status": "healthy"})
 
 
-@app.route("/items", methods=["POST"])
+@app.route("/faq", methods=["POST"])
 def chat():
     text = request.json["text"]
     result = chatgpt.query_question(text)
